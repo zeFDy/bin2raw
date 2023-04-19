@@ -23,16 +23,16 @@ int main(int argc, char* argv[])
 
 	if (argc >= 2)       // 1er argument (optionnel) est le fichier d'entree 
 	{
-		printf("argv[1]     = %s\n", argv[1]);
-		printf("argv[1] len = %d\n", strlen(argv[1]));
+		//printf("argv[1]     = %s\n", argv[1]);
+		//printf("argv[1] len = %d\n", strlen(argv[1]));
 		memset(caInputFileName, 0, SIZEOF_FILENAME);
 		strncpy_s(caInputFileName, SIZEOF_FILENAME, argv[1], strlen(argv[1]));
 	}
 
 	if (argc >= 3)       // 2eme argument (optionnel) est le fichier de sortie
 	{
-		printf("argv[2]     = %s\n", argv[2]);
-		printf("argv[2] len = %d\n", strlen(argv[2]));
+		//printf("argv[2]     = %s\n", argv[2]);
+		//printf("argv[2] len = %d\n", strlen(argv[2]));
 		memset(caOutputFileName, 0, SIZEOF_FILENAME);
 		strncpy_s(caOutputFileName, SIZEOF_FILENAME, argv[2], strlen(argv[2]));
 	}
